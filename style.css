@@ -1,0 +1,338 @@
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Archivo Black', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+ /* -------------------------------------------------------------------------- */
+ /*                                   NAV BAR                                  */
+ /* -------------------------------------------------------------------------- */
+nav {
+    width: 100%;
+    height: 0;
+    background-color: transparent;
+    padding: 0;
+    z-index: 1;
+    /* position: fixed; */
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;  
+    font-size: larger;
+}
+nav li{
+    display: inline-block;
+    margin: 35px 20px;
+}
+nav a{
+    color: #f0f1f4;
+    margin: 0;
+    text-decoration: none;
+    border: 5px solid #899593;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+nav a:hover{
+    background-color: #d3d4d6;
+    color: #899593;
+    padding: 20px 40px;
+    margin: 0;
+    border-radius: 30px;
+}
+ /* -------------------------------------------------------------------------- */
+ /*                                   FOOTER                                   */
+ /* -------------------------------------------------------------------------- */
+/* footer{
+    width: 100%;
+    background-color: skyblue;
+}
+
+.social{
+    text-align: center;
+}
+
+footer a{
+    display: inline-block;
+    font-size: x-large;
+    color: black;
+    margin: 50px;
+} */
+.social{
+    position: fixed;
+    top: 50%; left: 20px;
+    transform: translateY(-50%);
+}
+.social ul{
+    margin: 0; padding: 0;
+}
+.social ul li {
+    list-style: none;
+    margin: 70px 0;
+}
+.social a{
+    color:#f0f1f4;
+    border: 3px solid #899593;
+    border-radius: 100px;
+    margin-left: 0;
+    font-size: larger;
+    padding: 5px 10px;
+}
+.social a:hover{
+    background-color: #d3d4d6;
+    color: #899593;
+    margin-left: 0;
+    padding: 5px 10px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                    BODY                                    */
+/* -------------------------------------------------------------------------- */
+/* CODE FOR SCROLL SNAPPING */
+body .container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section{
+    width: 100vw;
+    height: 100%;
+    scroll-snap-align: start;
+}
+section header{
+    padding-top: 65px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: xx-large;
+}
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+section:nth-of-type(1){
+    color: #413c36;
+    width: 100%;
+    height: 100vh;
+    background: url("image/heroimage.jpg") no-repeat center / cover;
+    display: flex;
+    align-items: center;
+}
+.slider-container{
+    background-color: transparent;
+    width: 250px; height: 340px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    margin-left: 300px;
+    position: relative;
+}
+section:nth-of-type(1) img{
+    z-index: 1;
+    width: 250px;
+    border-radius: 50px;
+}
+section:nth-of-type(1) button{
+    background-color: transparent;
+    border: none;
+    padding: 15px 50px;
+}
+.fa-angle-left,
+.fa-angle-right{
+    color: black;
+    font-size: x-large;
+}
+/* -------------------------------------------------------------------------- */
+/*                                PRODUCT PAGE                                */
+/* -------------------------------------------------------------------------- */
+section:nth-of-type(2){
+    background-color: #b8b7bc;
+    color: #413c36;
+    height: auto;
+}
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 0;
+    padding: 0 0 10rem;
+    height: auto;
+}
+.card{
+    background-color: #d3d4d6;
+    border-radius: 50px;
+    padding: 0 0 10px 0 ;
+    margin: 5px 70px 0 8px;
+    border: 3px solid #899593;
+}
+.card:hover{
+    background-color: #f0f1f4;
+}
+.card-container{
+    background-color: transparent;
+    height: 100px; width: 270px;
+    margin: 85px 0 0 50px;
+    padding: 20px;
+}
+section:nth-of-type(2) h1,h2,p{
+    color: #2d433c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0 0; margin: 0;
+}
+section:nth-of-type(2) button{
+    background-color: #2d433c;
+    color: #bfc0bd;
+    margin: 5px 40px 0 ; padding: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 100px;
+    border-radius: 10px;
+}
+.resize{
+    height: auto;
+    width: 80px;
+    border: 3px solid #899593;
+    border-radius: 50px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                CONTACT FORM                                */
+/* -------------------------------------------------------------------------- */
+section:nth-of-type(3){
+    background-color: #b8b7bc;
+    color: #2c3632;
+}
+section:nth-of-type(3) form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    flex-direction: column;
+    gap: 60px;
+}
+.inputBox {
+    position: relative;
+    width: 30rem;
+}
+input, textarea{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 1px solid #899593;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#textbox{
+    width: 100%; height: 600%;
+}
+input:focus, textarea:focus{
+    border-color: #2c3632;
+}
+label{
+    position: relative;
+    left: 1rem;
+    height: 100%;
+    top: 5px;
+    padding-left: 10px;
+    color: #f0f1f4;
+    cursor: text;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-size: medium;
+}
+section:nth-of-type(3) button{
+    width: 10rem;
+    margin: 100px; padding: 10px;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f0f1f4;
+    border: 1px solid #899593;
+}
+section:nth-of-type(3) button:hover{
+    color: #899593;
+    background-color: #d3d4d6;
+}
+/* .form-input:focus ~ .form-label{
+    top: -1.5rem;
+    font-size: smaller;
+    left: 0.8rem;
+    opacity: .70;
+    color: black;
+} */
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -24px;
+    opacity: .60;
+    color: #2c3632;
+}
+/* -------------------------------------------------------------------------- */
+/*                    RESPONSIVE FOR TABLET AND SMARTPHONE                    */
+/* -------------------------------------------------------------------------- */
+/* TABLET SCREEN SIZE */
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+    nav ul{
+        font-size: medium;
+    }
+    .slider-container{
+        margin-left: 250px;
+    }
+    section:nth-of-type(1){
+        background: fixed;
+        background-color: #b8b7bc;
+    }
+}
+/* SMART PHONE SCREEN SIZE */
+@media screen and (max-width: 767px){
+    nav ul{
+        font-size: medium;
+    }
+    nav li{
+        display: inline-block;
+        margin: 35px 5px;
+    }
+    nav a{
+        padding: 20px 5px;
+    }
+    nav a:hover{
+        padding: 20px 5px;
+    }
+    section:nth-of-type(1){
+        background: fixed;
+        background-color: #b8b7bc;
+    }
+    .slider-container{
+        margin-left: 100px;
+    }
+    input, #textbox{
+        width: 150px;
+        left: 160px;
+    }
+    section:nth-of-type(3) form{
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+

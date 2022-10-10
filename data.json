@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "image": "image/EDD.png",
+            "name": "EDD NFT",
+            "made": "2011",
+            "price": "$1,300"
+        },
+        {
+            "image": "image/FRED.png",
+            "name": "FRED NFT",
+            "made": "2015",
+            "price": "$1,000"
+        },
+        {
+            "image": "image/ICE.png",
+            "name": "ICE NFT",
+            "made": "2019",
+            "price": "$800"
+        },
+        {
+            "image": "image/JOE.png",
+            "name": "JOE NFT",
+            "made": "2009",
+            "price": "$1,700"
+        },
+        {
+            "image": "image/JOSH.png",
+            "name": "JOSH NFT",
+            "made": "2001",
+            "price": "$5,000"
+        },
+        {
+            "image": "image/KAI.png",
+            "name": "KAI NFT",
+            "made": "2012",
+            "price": "$1,600"
+        },
+        {
+            "image": "image/KANYE.png",
+            "name": "KANYE NFT",
+            "made": "2001",
+            "price": "$20,000"
+        },
+        {
+            "image": "image/KEe.png",
+            "name": "KEE NFT",
+            "made": "2002",
+            "price": "$8,200"
+        },
+        {
+            "image": "image/KIM.png",
+            "name": "KIM NFT",
+            "made": "2008",
+            "price": "$6,800"
+        },
+        {
+            "image": "image/KYLE.png",
+            "name": "KYLE NFT",
+            "made": "2015",
+            "price": "$2,500"
+        },
+        {
+            "image": "image/STEVE.png",
+            "name": "STEVE NFT",
+            "made": "2005",
+            "price": "$6,500"
+        },
+        {
+            "image": "image/WALTER.png",
+            "name": "WALTER NFT",
+            "made": "2013",
+            "price": "$5,000"
+        }
+    ]
+}

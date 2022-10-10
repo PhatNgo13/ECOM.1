@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FOOTER LOGO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT FOR WEBSITE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>ECOM</title>
+</head>
+
+<body onload="loadJSON()">
+<!-- WHEN THE WEBSITE LOAD, LOAD JSON DATA -->
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#shop">SHOP</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+<!-- BODY -->
+<div class="container" >
+    <!-- HOME PAGE -->
+<section id="home" class="home">
+    <div class="slider-container">
+        <div class="slide">
+                <img id="img" src="image/EDD.png" alt="EDD">
+                <div id="navigation" data-index="0" >
+                    <button class="left" onclick="previous()"><i class='fas fa-angle-left'></i></button>
+                    <button class="right" onclick="next()"><i class='fas fa-angle-right'></i></button>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- PRODUCT PAGE -->
+<!-- INSERT PRODUCTS WITH JSON DATA THROUGH JS -->
+<section id="shop" class="shop">
+</section>
+<!-- CONTACT FORM -->
+<section id="contact">
+    <header><h1>CONTACT</h1></header><br>
+    <form>
+        <div class="inputBox">
+            <input type="text" required="required" placeholder="" class="form-input">
+            <label class="form-label">First name</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required" placeholder="" class="form-input">
+            <label class="form-label">Last name</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required" placeholder="" class="form-input">
+            <label class="form-label">Email</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required" placeholder="" class="form-input">
+            <label class="form-label">Phone no.</label>
+        </div>
+        <div class="inputBox">
+            <textarea required="required" placeholder="" id="textbox" class="form-input"></textarea>
+            <label class="form-label">Message here...</label>
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="social">
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a></li>  
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>  
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>  
+        </ul>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
